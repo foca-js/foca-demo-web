@@ -1,0 +1,54 @@
+.wrapper {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 40px;
+  text-align: initial;
+}
+
+.body {
+  width: 400px;
+  user-select: none;
+
+  > div {
+    cursor: pointer;
+
+    &.finished {
+      color: #ddd !important;
+      text-decoration: line-through;
+    }
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #eee;
+      margin-bottom: 15px;
+    }
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+
+  .time {
+    font-size: 12px;
+  }
+
+  .delete {
+    float: right;
+    margin-right: 10px;
+    font-size: 15px;
+
+    &:hover {
+      color: #f00;
+    }
+  }
+}
+
+.form {
+  margin-left: 10px;
+  width: 300px;
+  background-color: #f3f3f3;
+  padding: 15px;
+  border-radius: 4px;
+}
