@@ -323,6 +323,11 @@
     "@types/react" "*"
     hoist-non-react-statics "^3.3.0"
 
+"@types/node@^16.11.6":
+  version "16.11.6"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.6.tgz#6bef7a2a0ad684cf6e90fcfe31cecabd9ce0a3ae"
+  integrity sha512-ua7PgUoeQFjmWPcoo9khiPum3Pd60k4/2ZGXt18sm2Slk0W0xZTqt5Y0Ny1NyBiN1EVQ/+FaF9NcY4Qe6rwk5w==
+
 "@types/prop-types@*":
   version "15.7.4"
   resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.7.4.tgz#fcf7205c25dff795ee79af1e30da2c9790808f11"
@@ -1143,18 +1148,12 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.2.tgz#64bfed5cb68fe3ca78b3eb214ad97b63bedce561"
   integrity sha512-JaTY/wtrcSyvXJl4IMFHPKyFur1sE9AUqc0QnhOaJ0CxHtAoIV8pYDzeEfAaNEtGkOfq4gr3LBFmdXW5mOQFnA==
 
-foca-storage-engine@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/foca-storage-engine/-/foca-storage-engine-0.0.1.tgz#dd9cc59c2626ce852f56f93c20c1fec9dd1e839a"
-  integrity sha512-F1rZUzY40McJvhdNBiadtNGGlgJaFg8QqHvGxswfYVl8kfoN5/S6el7f7j3twCh7ttwZQXP5kI2oGbH4oultig==
-
-foca@^0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/foca/-/foca-0.1.0.tgz#e9fcf6ecfc50f27dd1f6765e01c98e0d2f7339d6"
-  integrity sha512-oR9Ajh9PryadILnMsvKHdLjb/z5BL8UWqIcnMYYWPnHMHe8EdSpoWpyZ3VcSeZ8O1RD/YxejC9QAPloxMHwr+w==
+foca@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/foca/-/foca-0.1.1.tgz#765144c11b82f615c904a70f81ad3a93621f253c"
+  integrity sha512-PgF997o2R8GLtHEjYgAcrjRGHWzFkMyCE5JhOu2HX8Vj4ilm+yHd9nO/e//9t3okXKglFC6pRwx6qyxgxcvLlQ==
   dependencies:
     clone "^2.1.2"
-    foca-storage-engine "^0.0.1"
     immer "^9.0.6"
     lodash.isequal "^4.5.0"
     object-assign "^4.1.1"

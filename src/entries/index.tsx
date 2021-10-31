@@ -1,4 +1,4 @@
-import './initStore';
+import './store';
 
 import { FocaProvider } from 'foca';
 import ReactDOM from 'react-dom';

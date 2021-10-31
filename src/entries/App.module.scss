@@ -10,7 +10,7 @@
   width: 400px;
   user-select: none;
 
-  > div {
+  .item {
     cursor: pointer;
 
     &.finished {

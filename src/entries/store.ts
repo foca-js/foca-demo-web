@@ -18,7 +18,7 @@ store.init({
   middleware: rootMiddleWares,
   persist: [
     {
-      key: 'todo-list',
+      key: `todo-list-${process.env.NODE_ENV}`,
       version: 1,
       engine: engines.localStorage,
       models: [todoModel],

@@ -38,7 +38,9 @@ const App: FC = () => {
             return (
               <div
                 key={id}
-                className={todo.finished ? styles.finished : ''}
+                className={`${styles.item} ${
+                  todo.finished ? styles.finished : ''
+                }`}
                 onClick={() => handleChangeStatus(id, !todo.finished)}
               >
                 <p className={styles.title}>{todo.title}</p>
