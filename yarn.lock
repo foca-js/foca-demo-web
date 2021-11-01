@@ -1148,10 +1148,10 @@ flatted@^3.1.0:
   resolved "https://registry.yarnpkg.com/flatted/-/flatted-3.2.2.tgz#64bfed5cb68fe3ca78b3eb214ad97b63bedce561"
   integrity sha512-JaTY/wtrcSyvXJl4IMFHPKyFur1sE9AUqc0QnhOaJ0CxHtAoIV8pYDzeEfAaNEtGkOfq4gr3LBFmdXW5mOQFnA==
 
-foca@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/foca/-/foca-0.1.1.tgz#765144c11b82f615c904a70f81ad3a93621f253c"
-  integrity sha512-PgF997o2R8GLtHEjYgAcrjRGHWzFkMyCE5JhOu2HX8Vj4ilm+yHd9nO/e//9t3okXKglFC6pRwx6qyxgxcvLlQ==
+foca@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/foca/-/foca-0.1.2.tgz#04468563b8075f53277f402a1f4d25d117b5f2c9"
+  integrity sha512-PjAIOhkAwiZG5DD1G31gw+b11ntsWMoEDjeiTuG+5xmlSqQC72qEVrhEH9Wmtbxn6XlEZ7fCmgDHR6IiKoHGqg==
   dependencies:
     clone "^2.1.2"
     immer "^9.0.6"

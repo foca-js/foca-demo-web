@@ -1,10 +1,11 @@
 import { Middleware, store, engines } from 'foca';
 import { createLogger } from 'redux-logger';
 import { todoModel } from '../models/todoModel';
-export const rootMiddleWares: Middleware[] = [];
+
+const middleware: Middleware[] = [];
 
 if (import.meta.env.MODE !== 'production') {
-  rootMiddleWares.push(
+  middleware.push(
     createLogger({
       collapsed: true,
       diff: true,
@@ -15,7 +16,8 @@ if (import.meta.env.MODE !== 'production') {
 }
 
 store.init({
-  middleware: rootMiddleWares,
+  middleware: middleware,
+  compose: process.env.NODE_ENV === 'production' ? void 0 : 'redux-devtools',
   persist: [
     {
       key: `todo-list-${process.env.NODE_ENV}`,
