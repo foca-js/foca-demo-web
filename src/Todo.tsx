@@ -2,10 +2,10 @@ import { useModel } from 'foca';
 import { Alert, Button, Empty, Form, Input, message, Tooltip } from 'antd';
 import { DeleteOutlined } from '@ant-design/icons';
 import { FC, memo, MouseEvent, useCallback } from 'react';
-import { TodoItem, todoModel } from '../models/todoModel';
-import styles from './App.module.scss';
+import { TodoItem, todoModel } from './models/todoModel';
+import styles from './Todo.module.scss';
 
-const App: FC = () => {
+const Todo: FC = () => {
   const { list, total } = useModel(todoModel, (state) => ({
     list: Array.from(state.list.entries()).reverse(),
     total: state.total,
@@ -79,4 +79,4 @@ const App: FC = () => {
   );
 };
 
-export default memo(App);
+export default memo(Todo);
