@@ -8,16 +8,16 @@ export interface TodoItem {
   createdAt: number;
 }
 
-interface State {
+const initialState: {
   list: Map<number, TodoItem>;
   total: number;
-}
+} = {
+  list: new Map(),
+  total: 0,
+};
 
 export const todoModel = defineModel('todo', {
-  state: <State>{
-    list: new Map(),
-    total: 0,
-  },
+  initialState,
   actions: {
     add(state, title: string, content: string) {
       const id = Date.now();
