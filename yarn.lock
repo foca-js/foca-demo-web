@@ -1163,10 +1163,10 @@ foca-axios-enhancer@^0.3.0:
     clone "^2.1.2"
     object-assign "^4.1.1"
 
-foca@^0.1.4:
-  version "0.1.4"
-  resolved "https://registry.npmmirror.com/foca/download/foca-0.1.4.tgz#ab64640105080d1aa7ba7cde83cb05bbdb2564fb"
-  integrity sha1-q2RkAQUIDRqnunzeg8sFu9slZPs=
+foca@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/foca/-/foca-0.1.5.tgz#e7dd7c4efa0482e033acbd362c964119090ffbcf"
+  integrity sha512-17qXhIJCCSmHTGV9fTxwsCY1wzuqvcaxJ9uQIv+u+XlMrzO8v0XhPqWY/oVJw/PiHH/cksL0S/abKXBrRO8IqA==
   dependencies:
     clone "^2.1.2"
     immer "^9.0.6"
