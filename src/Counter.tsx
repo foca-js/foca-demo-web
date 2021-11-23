@@ -31,7 +31,7 @@ const Counter: FC = () => {
           x3
         </Button>
         &nbsp;&nbsp;&nbsp;
-        <Button onClick={counterModel.reset}>重置</Button>
+        <Button onClick={() => counterModel.reset()}>重置</Button>
       </div>
     </div>
   );
