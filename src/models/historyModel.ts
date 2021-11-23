@@ -1,6 +1,6 @@
 import { defineModel } from 'foca';
 
-const initialState: string[] = [];
+const initialState: string[] = ['react', 'vue'];
 
 export const historyModel = defineModel('history', {
   initialState,
