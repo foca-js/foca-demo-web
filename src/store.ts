@@ -1,6 +1,7 @@
 import { Middleware, store, engines } from 'foca';
 import { createLogger } from 'redux-logger';
 import { historyModel } from './models/historyModel';
+import { npmMarkModel } from './models/npmMarkModel';
 import { todoModel } from './models/todoModel';
 
 const middleware: Middleware[] = [];
@@ -24,7 +25,7 @@ store.init({
       key: `todo-list-${process.env.NODE_ENV}`,
       version: 1,
       engine: engines.localStorage,
-      models: [todoModel, historyModel],
+      models: [todoModel, historyModel, npmMarkModel],
     },
   ],
 });

@@ -1,16 +1,21 @@
 import { ChangeEvent, FC, memo, useCallback, useState } from 'react';
-import { Input, Tag, Table } from 'antd';
+import { Input, Tag, Table, Switch } from 'antd';
 import styles from './SearchNpm.module.scss';
 import { npmModel } from './models/npmModel';
-import { useLoading, useModel } from 'foca';
+import { useLoading, useLoadings, useModel } from 'foca';
 import { historyModel } from './models/historyModel';
+import { npmMarkModel } from './models/npmMarkModel';
 
 const SearchNpm: FC = () => {
   const [searchValue, setSearchValue] = useState('');
   const [currentValue, setCurrentValue] = useState('');
   const npm = useModel(npmModel, (state) => state[searchValue]);
-  const tags = useModel(historyModel);
+  const { history: tags, npmMarks: marks } = useModel(
+    historyModel,
+    npmMarkModel,
+  );
   const loading = useLoading(npmModel.search);
+  const markings = useLoadings(npmMarkModel.toggle);
 
   const handleSearch = useCallback((value) => {
     setSearchValue(value);
@@ -68,6 +73,24 @@ const SearchNpm: FC = () => {
               {
                 title: '标签',
                 dataIndex: 'tag',
+              },
+              {
+                title: '标记',
+                render(_, record) {
+                  return (
+                    <Switch
+                      checked={marks.has(
+                        npmMarkModel.combineKey(npm.name, record.tag),
+                      )}
+                      loading={markings.pick(record.tag)}
+                      onChange={() => {
+                        npmMarkModel.toggle
+                          .meta(record.tag)
+                          .execute(npm.name, record.tag);
+                      }}
+                    />
+                  );
+                },
               },
             ]}
             dataSource={Object.entries(npm['dist-tags']).map(

@@ -1163,7 +1163,7 @@ foca-axios-enhancer@^0.3.0:
     clone "^2.1.2"
     object-assign "^4.1.1"
 
-foca@0.2.3:
+foca@^0.2.3:
   version "0.2.3"
   resolved "https://registry.yarnpkg.com/foca/-/foca-0.2.3.tgz#9f3943d5c19442246ccb6c6d5b2f8abd57349485"
   integrity sha512-URBnREtbZSIvckkGj8zNlRBoY5KLQVMMTVVf01diXbHcyUdaT6Aedce6QvLujl7a7ok95wgrW1V/srzDLJnvNw==
@@ -2285,6 +2285,11 @@ shebang-regex@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmmirror.com/shebang-regex/download/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha1-rhbxZE2HPsrYQ7AwexQzYtTEIXI=
+
+sleep-promise@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/sleep-promise/-/sleep-promise-9.1.0.tgz#101ebe65700bcd184709da95d960967b02b79d03"
+  integrity sha512-UHYzVpz9Xn8b+jikYSD6bqvf754xL2uBUzDFwiU6NcdZeifPr6UfgU43xpkPu67VMS88+TI2PSI7Eohgqf2fKA==
 
 slice-ansi@^4.0.0:
   version "4.0.0"
