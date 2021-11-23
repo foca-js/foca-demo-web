@@ -5,7 +5,7 @@ import { historyModel } from './historyModel';
 interface NpmItem {
   'name': string;
   'homepage': string;
-  'license': string;
+  'license': string | { type: string; url: string };
   'dist-tags': Record<string, string>;
 }
 
@@ -21,7 +21,6 @@ export const npmModel = defineModel('npms', {
         cache: true,
       });
       this.dispatch((state) => {
-        Reflect.deleteProperty(result, 'versions');
         state[result.name] = result;
       });
     },

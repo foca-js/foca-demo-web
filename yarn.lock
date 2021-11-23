@@ -317,8 +317,8 @@
 
 "@types/hoist-non-react-statics@^3.3.0":
   version "3.3.1"
-  resolved "https://registry.npmmirror.com/@types/hoist-non-react-statics/download/@types/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
-  integrity sha1-ESSq/lEYy1kZd66xzqrtEHDrA58=
+  resolved "https://registry.yarnpkg.com/@types/hoist-non-react-statics/-/hoist-non-react-statics-3.3.1.tgz#1124aafe5118cb591977aeb1ceaaed1070eb039f"
+  integrity sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==
   dependencies:
     "@types/react" "*"
     hoist-non-react-statics "^3.3.0"
@@ -342,8 +342,8 @@
 
 "@types/react-redux@^7.1.20":
   version "7.1.20"
-  resolved "https://registry.npmmirror.com/@types/react-redux/download/@types/react-redux-7.1.20.tgz#42f0e61ababb621e12c66c96dda94c58423bd7df"
-  integrity sha1-QvDmGrq7Yh4SxmyW3alMWEI7198=
+  resolved "https://registry.yarnpkg.com/@types/react-redux/-/react-redux-7.1.20.tgz#42f0e61ababb621e12c66c96dda94c58423bd7df"
+  integrity sha512-q42es4c8iIeTgcnB+yJgRTTzftv3eYYvCZOh1Ckn2eX/3o5TdsQYKUWpLoLuGlcY/p+VAhV9IOEZJcWk/vfkXw==
   dependencies:
     "@types/hoist-non-react-statics" "^3.3.0"
     "@types/react" "*"
@@ -1163,10 +1163,10 @@ foca-axios-enhancer@^0.3.0:
     clone "^2.1.2"
     object-assign "^4.1.1"
 
-foca@^0.1.5:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/foca/-/foca-0.1.5.tgz#e7dd7c4efa0482e033acbd362c964119090ffbcf"
-  integrity sha512-17qXhIJCCSmHTGV9fTxwsCY1wzuqvcaxJ9uQIv+u+XlMrzO8v0XhPqWY/oVJw/PiHH/cksL0S/abKXBrRO8IqA==
+foca@0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/foca/-/foca-0.2.3.tgz#9f3943d5c19442246ccb6c6d5b2f8abd57349485"
+  integrity sha512-URBnREtbZSIvckkGj8zNlRBoY5KLQVMMTVVf01diXbHcyUdaT6Aedce6QvLujl7a7ok95wgrW1V/srzDLJnvNw==
   dependencies:
     clone "^2.1.2"
     immer "^9.0.6"
@@ -1284,8 +1284,8 @@ header-case@^2.0.4:
 
 hoist-non-react-statics@^3.3.0, hoist-non-react-statics@^3.3.2:
   version "3.3.2"
-  resolved "https://registry.npmmirror.com/hoist-non-react-statics/download/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
-  integrity sha1-7OCsr3HWLClpwuxZ/v9CpLGoW0U=
+  resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
+  integrity sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==
   dependencies:
     react-is "^16.7.0"
 
@@ -1321,8 +1321,8 @@ image-size@~0.5.0:
 
 immer@^9.0.6:
   version "9.0.6"
-  resolved "https://registry.npmmirror.com/immer/download/immer-9.0.6.tgz#7a96bf2674d06c8143e327cbf73539388ddf1a73"
-  integrity sha1-epa/JnTQbIFD4yfL9zU5OI3fGnM=
+  resolved "https://registry.yarnpkg.com/immer/-/immer-9.0.6.tgz#7a96bf2674d06c8143e327cbf73539388ddf1a73"
+  integrity sha512-G95ivKpy+EvVAnAab4fVa4YGYn24J1SpEktnJX7JJ45Bd7xqME/SCplFzYFmTbrkwZbQ4xJK1xMTUYBkN6pWsQ==
 
 import-fresh@^3.0.0, import-fresh@^3.2.1:
   version "3.3.0"
@@ -1489,7 +1489,7 @@ levn@^0.4.1:
 
 lodash.isequal@^4.5.0:
   version "4.5.0"
-  resolved "https://registry.npmmirror.com/lodash.isequal/download/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
   integrity sha1-QVxEePK8wwEgwizhDtMib30+GOA=
 
 lodash.merge@^4.6.2:
@@ -1728,8 +1728,8 @@ progress@^2.0.0:
 
 prop-types@^15.7.2:
   version "15.7.2"
-  resolved "https://registry.npmmirror.com/prop-types/download/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
-  integrity sha1-UsQedbjIfnK52TYOAga5ncv/psU=
+  resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
+  integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
   dependencies:
     loose-envify "^1.4.0"
     object-assign "^4.1.1"
@@ -2105,13 +2105,13 @@ react-is@^16.12.0, react-is@^16.7.0, react-is@^16.8.1:
 
 react-is@^17.0.2:
   version "17.0.2"
-  resolved "https://registry.npmmirror.com/react-is/download/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
-  integrity sha1-5pHUqOnHiTZWVVOas3J2Kw77VPA=
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-17.0.2.tgz#e691d4a8e9c789365655539ab372762b0efb54f0"
+  integrity sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==
 
 react-redux@^7.2.5:
   version "7.2.6"
-  resolved "https://registry.npmmirror.com/react-redux/download/react-redux-7.2.6.tgz#49633a24fe552b5f9caf58feb8a138936ddfe9aa"
-  integrity sha1-SWM6JP5VK1+cr1j+uKE4k23f6ao=
+  resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-7.2.6.tgz#49633a24fe552b5f9caf58feb8a138936ddfe9aa"
+  integrity sha512-10RPdsz0UUrRL1NZE0ejTkucnclYSgXp5q+tB5SWx2qeG2ZJQJyymgAhwKy73yiL/13btfB6fPr+rgbMAaZIAQ==
   dependencies:
     "@babel/runtime" "^7.15.4"
     "@types/react-redux" "^7.1.20"
@@ -2149,8 +2149,8 @@ redux-logger@^3.0.6:
 
 redux@^4.0.0, redux@^4.1.2:
   version "4.1.2"
-  resolved "https://registry.npmmirror.com/redux/download/redux-4.1.2.tgz#140f35426d99bb4729af760afcf79eaaac407104"
-  integrity sha1-FA81Qm2Zu0cpr3YK/PeeqqxAcQQ=
+  resolved "https://registry.yarnpkg.com/redux/-/redux-4.1.2.tgz#140f35426d99bb4729af760afcf79eaaac407104"
+  integrity sha512-SH8PglcebESbd/shgf6mii6EIoRM0zrQyjcuQ+ojmfxjTtE0z9Y8pa62iA/OJ58qjP6j27uyW4kUF4jl/jd6sw==
   dependencies:
     "@babel/runtime" "^7.9.2"
 
@@ -2378,8 +2378,8 @@ supports-color@^7.1.0:
 
 symbol-observable@^4.0.0:
   version "4.0.0"
-  resolved "https://registry.npmmirror.com/symbol-observable/download/symbol-observable-4.0.0.tgz?cache=0&sync_timestamp=1632753453111&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fsymbol-observable%2Fdownload%2Fsymbol-observable-4.0.0.tgz#5b425f192279e87f2f9b937ac8540d1984b39205"
-  integrity sha1-W0JfGSJ56H8vm5N6yFQNGYSzkgU=
+  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-4.0.0.tgz#5b425f192279e87f2f9b937ac8540d1984b39205"
+  integrity sha512-b19dMThMV4HVFynSAM1++gBHAbk2Tc/osgLIBZMKsyqh34jb2e8Os7T6ZW/Bt3pJFdBTd2JwAnAAEQV7rSNvcQ==
 
 systemjs@^6.10.3:
   version "6.11.0"
@@ -2430,8 +2430,8 @@ toggle-selection@^1.0.6:
 
 topic@^3.0.0:
   version "3.0.0"
-  resolved "https://registry.npmmirror.com/topic/download/topic-3.0.0.tgz#f247173d27c8da121917c8f5f05efe8df60bce4b"
-  integrity sha1-8kcXPSfI2hIZF8j18F7+jfYLzks=
+  resolved "https://registry.yarnpkg.com/topic/-/topic-3.0.0.tgz#f247173d27c8da121917c8f5f05efe8df60bce4b"
+  integrity sha512-H8WFUpCQwbtKAjnKvkQ7YT+/pcVVbGmehiOyw7ZwKtsCaOyHnz6o4CSQhFKqc+VODjpy8XmeWie0Hq7X+uMIag==
 
 tslib@^2.0.3, tslib@^2.3.0, tslib@^2.3.1:
   version "2.3.1"

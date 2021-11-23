@@ -5,7 +5,7 @@ import { todoModel } from './models/todoModel';
 
 const middleware: Middleware[] = [];
 
-if (import.meta.env.MODE !== 'production') {
+if (process.env.NODE_ENV !== 'production') {
   middleware.push(
     createLogger({
       collapsed: true,
@@ -17,6 +17,7 @@ if (import.meta.env.MODE !== 'production') {
 }
 
 store.init({
+  // compose: process.env.NODE_ENV === 'production' ? void 0 : 'redux-devtools',
   middleware: middleware,
   persist: [
     {

@@ -8,11 +8,8 @@ export interface TodoItem {
   createdAt: number;
 }
 
-const initialState: {
-  list: Map<number, TodoItem>;
-  total: number;
-} = {
-  list: new Map(),
+const initialState = {
+  list: new Map<number, TodoItem>(),
   total: 0,
 };
 

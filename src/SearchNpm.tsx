@@ -55,7 +55,9 @@ const SearchNpm: FC = () => {
               {npm.name}
             </a>
             &nbsp;
-            <Tag color="orange">{npm.license}</Tag>
+            <Tag color="orange">
+              {typeof npm.license === 'string' ? npm.license : npm.license.type}
+            </Tag>
           </header>
           <Table
             columns={[
