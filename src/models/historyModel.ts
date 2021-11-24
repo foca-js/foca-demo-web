@@ -7,9 +7,8 @@ export const historyModel = defineModel('history', {
   actions: {
     append(state, packageName: string) {
       const index = state.indexOf(packageName);
-      if (index >= 0) {
-        state.splice(index, 1);
-      }
+
+      index >= 0 && state.splice(index, 1);
       state.unshift(packageName);
     },
     clear() {
