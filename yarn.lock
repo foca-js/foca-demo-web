@@ -1164,13 +1164,13 @@ foca-axios@^0.3.0:
     clone "^2.1.2"
     object-assign "^4.1.1"
 
-foca@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/foca/-/foca-0.3.0.tgz#93502e5883cf78c3d678ce64cfd598b2695ededb"
-  integrity sha512-nHvFl7TTDZbRBhlNTd7RlgjaMrfmCK3648vECSbtYnT6PoGPGPmVBXmT8W9pCducqH06lhIa8VRZcrekfLpPHA==
+foca@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/foca/-/foca-0.3.1.tgz#bc8534a1168342dbd30415168f78751b3d5232be"
+  integrity sha512-+McnEi9Lnr5cQoWZmnD0GMtnZJw9IH3TLCMp42GtYhZsR75mRERWYVEgwawnQbNuoYWJEN9WkD7Ug4Phfg5GuA==
   dependencies:
     clone "^2.1.2"
-    immer "^9.0.6"
+    immer "^9.0.7"
     lodash.isequal "^4.5.0"
     object-assign "^4.1.1"
     react-redux "^7.2.5"
@@ -1320,10 +1320,10 @@ image-size@~0.5.0:
   resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.5.5.tgz#09dfd4ab9d20e29eb1c3e80b8990378df9e3cb9c"
   integrity sha1-Cd/Uq50g4p6xw+gLiZA3jfnjy5w=
 
-immer@^9.0.6:
-  version "9.0.6"
-  resolved "https://registry.yarnpkg.com/immer/-/immer-9.0.6.tgz#7a96bf2674d06c8143e327cbf73539388ddf1a73"
-  integrity sha512-G95ivKpy+EvVAnAab4fVa4YGYn24J1SpEktnJX7JJ45Bd7xqME/SCplFzYFmTbrkwZbQ4xJK1xMTUYBkN6pWsQ==
+immer@^9.0.7:
+  version "9.0.7"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-9.0.7.tgz#b6156bd7db55db7abc73fd2fdadf4e579a701075"
+  integrity sha512-KGllzpbamZDvOIxnmJ0jI840g7Oikx58lBPWV0hUh7dtAyZpFqqrBZdKka5GlTwMTZ1Tjc/bKKW4VSFAt6BqMA==
 
 import-fresh@^3.0.0, import-fresh@^3.2.1:
   version "3.3.0"
