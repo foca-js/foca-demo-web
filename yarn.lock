@@ -1164,10 +1164,10 @@ foca-axios@^0.3.0:
     clone "^2.1.2"
     object-assign "^4.1.1"
 
-foca@^0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/foca/-/foca-0.3.1.tgz#bc8534a1168342dbd30415168f78751b3d5232be"
-  integrity sha512-+McnEi9Lnr5cQoWZmnD0GMtnZJw9IH3TLCMp42GtYhZsR75mRERWYVEgwawnQbNuoYWJEN9WkD7Ug4Phfg5GuA==
+foca@^0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/foca/-/foca-0.3.2.tgz#c49bdaaf4fd7a6a89db114c66e38f4c21443b08f"
+  integrity sha512-I7oUKbi5V4uItfD9P565PCmRQJVIUDu9cAouoMnU3urNR8aeqpJwUv7DwlsRMm8gtlVE5qnaZUS8uMyeKWjpBw==
   dependencies:
     clone "^2.1.2"
     immer "^9.0.7"
@@ -1175,7 +1175,6 @@ foca@^0.3.1:
     object-assign "^4.1.1"
     react-redux "^7.2.5"
     redux "^4.1.2"
-    symbol-observable "^4.0.0"
     topic "^3.0.0"
 
 follow-redirects@^1.14.4:
@@ -2382,11 +2381,6 @@ supports-color@^7.1.0:
   integrity sha512-qpCAvRl9stuOHveKsn7HncJRvv501qIacKzQlO/+Lwxc9+0q2wLyv4Dfvt80/DPn2pqOBsJdDiogXGR9+OvwRw==
   dependencies:
     has-flag "^4.0.0"
-
-symbol-observable@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/symbol-observable/-/symbol-observable-4.0.0.tgz#5b425f192279e87f2f9b937ac8540d1984b39205"
-  integrity sha512-b19dMThMV4HVFynSAM1++gBHAbk2Tc/osgLIBZMKsyqh34jb2e8Os7T6ZW/Bt3pJFdBTd2JwAnAAEQV7rSNvcQ==
 
 systemjs@^6.11.0:
   version "6.11.0"

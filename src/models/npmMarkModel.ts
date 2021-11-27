@@ -22,4 +22,5 @@ export const npmMarkModel = defineModel('npmMarks', {
       return `${pkg}|${tag}`;
     },
   },
+  skipRefresh: true,
 });
