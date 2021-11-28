@@ -31,7 +31,7 @@ const Todo: FC = () => {
 
   return (
     <>
-      <Alert message={`当前${total}条数据，刷新后数据不会丢失`} />
+      <Alert message={`当前${total}条数据，刷新网页后数据不会丢失`} />
       <div className={styles.wrapper}>
         <div className={styles.body}>
           {list.map(([id, todo]) => {
