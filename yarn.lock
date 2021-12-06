@@ -1165,15 +1165,14 @@ foca-axios@^0.3.0:
     clone "^2.1.2"
     object-assign "^4.1.1"
 
-foca@^0.3.3:
-  version "0.3.3"
-  resolved "https://registry.yarnpkg.com/foca/-/foca-0.3.3.tgz#2ce0e56e13038254fe182ddc232bb9ef383a51e3"
-  integrity sha512-CPlvvRt3taqinwcLg2s/pGIhiP52eg0Z5QaAQNlZiFoY0NZY2Csdq/kFRR+bOs30cLzAK92kKwTofePbZ7ZUfA==
+foca@^0.3.6:
+  version "0.3.6"
+  resolved "https://registry.yarnpkg.com/foca/-/foca-0.3.6.tgz#921c334a61e790ada6cfc2c7b316e8e331fc2306"
+  integrity sha512-YQ5n6UD7daKppP9+NRbFyrqYeAS07/GIh63A/EB5qUdp/PkMMJ+M6k15/AU94QgGLFolb8Jc9BlzTf12DCdQqw==
   dependencies:
     clone "^2.1.2"
     immer "^9.0.7"
     lodash.isequal "^4.5.0"
-    object-assign "^4.1.1"
     react-redux "^7.2.5"
     redux "^4.1.2"
     topic "^3.0.0"
