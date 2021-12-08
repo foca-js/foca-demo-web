@@ -2,7 +2,7 @@ import { ChangeEvent, FC, memo, useCallback, useState } from 'react';
 import { Input, Tag, Table, Switch } from 'antd';
 import styles from './SearchNpm.module.scss';
 import { npmModel } from './models/npmModel';
-import { useLoading, useLoadings, useModel } from 'foca';
+import { useLoading, useModel } from 'foca';
 import { historyModel } from './models/historyModel';
 import { npmMarkModel } from './models/npmMarkModel';
 
@@ -15,7 +15,7 @@ const SearchNpm: FC = () => {
     npmMarkModel,
   );
   const loading = useLoading(npmModel.search);
-  const markings = useLoadings(npmMarkModel.toggle);
+  const markings = useLoading(npmMarkModel.toggle.assign);
 
   const handleSearch = useCallback((value) => {
     setSearchValue(value);
@@ -82,10 +82,10 @@ const SearchNpm: FC = () => {
                       checked={marks.has(
                         npmMarkModel.combineKey(npm.name, record.tag),
                       )}
-                      loading={markings.pick(record.tag)}
+                      loading={markings.find(record.tag)}
                       onChange={() => {
                         npmMarkModel.toggle
-                          .meta(record.tag)
+                          .assign(record.tag)
                           .execute(npm.name, record.tag);
                       }}
                     />

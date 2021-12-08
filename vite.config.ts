@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite-react';
+import { defineConfig, styleResolves } from 'vite-react';
 
 export default defineConfig({
   server: {
@@ -6,6 +6,18 @@ export default defineConfig({
   },
   esbuild: {
     jsxInject: `import React from 'react'`,
+  },
+  styleImport: {
+    options: {
+      libs: [styleResolves.antd()],
+    },
+  },
+  css: {
+    preprocessorOptions: {
+      less: {
+        javascriptEnabled: true,
+      },
+    },
   },
   legacy: {
     enable: false,
