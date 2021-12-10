@@ -8,8 +8,11 @@ export interface TodoItem {
   createdAt: number;
 }
 
-const initialState = {
-  list: new Map<number, TodoItem>(),
+const initialState: {
+  list: Record<string, TodoItem>;
+  total: number;
+} = {
+  list: {},
   total: 0,
 };
 
@@ -20,22 +23,24 @@ export const todoModel = defineModel('todo', {
       const id = Date.now();
 
       ++state.total;
-      state.list.set(id, {
+      state.list[id] = {
         id,
         title,
         content,
         finished: false,
         createdAt: Date.now(),
-      });
+      };
     },
     finished(state, id: number, is: boolean) {
-      const data = state.list.get(id)!;
+      const data = state.list[id]!;
       data.finished = is;
-      state.list.set(id, data);
     },
     delete(state, id: number) {
-      state.list.delete(id);
+      delete state.list[id];
       state.total -= 1;
     },
+  },
+  persist: {
+    version: 1,
   },
 });

@@ -7,7 +7,7 @@ import styles from './Todo.module.scss';
 
 const Todo: FC = () => {
   const { list, total } = useModel(todoModel, (state) => ({
-    list: Array.from(state.list.entries()).reverse(),
+    list: Object.entries(state.list).reverse(),
     total: state.total,
   }));
 
@@ -35,13 +35,14 @@ const Todo: FC = () => {
       <div className={styles.wrapper}>
         <div className={styles.body}>
           {list.map(([id, todo]) => {
+            console.log(todo);
             return (
               <div
                 key={id}
                 className={`${styles.item} ${
                   todo.finished ? styles.finished : ''
                 }`}
-                onClick={() => handleChangeStatus(id, !todo.finished)}
+                onClick={() => handleChangeStatus(Number(id), !todo.finished)}
               >
                 <p className={styles.title}>{todo.title}</p>
                 <p>{todo.content}</p>
@@ -50,7 +51,7 @@ const Todo: FC = () => {
                   <Tooltip title="删除待办">
                     <DeleteOutlined
                       className={styles.delete}
-                      onClick={(e) => handleDelete(e, id)}
+                      onClick={(e) => handleDelete(e, Number(id))}
                     />
                   </Tooltip>
                 </p>

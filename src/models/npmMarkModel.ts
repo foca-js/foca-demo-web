@@ -1,7 +1,7 @@
 import { defineModel } from 'foca';
 import sleep from 'sleep-promise';
 
-const initialState = new Set<string>();
+const initialState: string[] = [];
 
 export const npmMarkModel = defineModel('npmMarks', {
   initialState,
@@ -11,11 +11,11 @@ export const npmMarkModel = defineModel('npmMarks', {
       this.dispatch((state) => {
         const key = this.combineKey(pkg, tag);
 
-        if (state.has(key)) {
-          state.delete(key);
-        } else {
-          state.add(key);
+        if (state.includes(key)) {
+          return state.filter((item) => item !== key);
         }
+
+        return void state.push(key);
       });
     },
     combineKey(pkg: string, tag: string) {
@@ -23,4 +23,7 @@ export const npmMarkModel = defineModel('npmMarks', {
     },
   },
   skipRefresh: true,
+  persist: {
+    version: 1,
+  },
 });

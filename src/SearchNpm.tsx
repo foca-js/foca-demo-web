@@ -79,7 +79,7 @@ const SearchNpm: FC = () => {
                 render(_, record) {
                   return (
                     <Switch
-                      checked={marks.has(
+                      checked={marks.includes(
                         npmMarkModel.combineKey(npm.name, record.tag),
                       )}
                       loading={markings.find(record.tag)}
