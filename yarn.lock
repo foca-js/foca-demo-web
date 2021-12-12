@@ -1165,10 +1165,10 @@ foca-axios@^0.3.0:
     clone "^2.1.2"
     object-assign "^4.1.1"
 
-foca@^0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/foca/-/foca-0.6.0.tgz#72538910f4b6dc95e1436059a70ea69065686598"
-  integrity sha512-Y3Aeuj+uw6UjjY5hTR7x/F4blTUcwz83yncfiYWnFXUWF8goaF2AWH/FHCInt2sBA9FSAzvNrhLdEJcAfSTmFA==
+foca@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/foca/-/foca-0.7.1.tgz#8c9eac061b3b508b41293f0c3fe56e4887573e0e"
+  integrity sha512-J5mOLSYa69QcYUHifzTeEa4RU39IdGrug2JGaEfwi7igt8ltqgSW7QyitOQCPAXCJemhklUNQGFvLIG/yyMr7w==
   dependencies:
     clone "^2.1.2"
     immer "^9.0.7"

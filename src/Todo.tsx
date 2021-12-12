@@ -35,7 +35,6 @@ const Todo: FC = () => {
       <div className={styles.wrapper}>
         <div className={styles.body}>
           {list.map(([id, todo]) => {
-            console.log(todo);
             return (
               <div
                 key={id}

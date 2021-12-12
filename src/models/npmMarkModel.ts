@@ -8,7 +8,7 @@ export const npmMarkModel = defineModel('npmMarks', {
   effects: {
     async toggle(pkg: string, tag: string) {
       await sleep(2000 * Math.random());
-      this.dispatch((state) => {
+      this.setState((state) => {
         const key = this.combineKey(pkg, tag);
 
         if (state.includes(key)) {

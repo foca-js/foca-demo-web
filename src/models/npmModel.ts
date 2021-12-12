@@ -20,7 +20,7 @@ export const npmModel = defineModel('npms', {
       const result = await http.get<NpmItem>(`/${packageName}`, {
         cache: true,
       });
-      this.dispatch((state) => {
+      this.setState((state) => {
         state[result.name] = result;
       });
     },
