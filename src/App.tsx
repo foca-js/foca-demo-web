@@ -2,6 +2,7 @@ import { Button, message, Tabs } from 'antd';
 import { store } from 'foca';
 import { FC, memo } from 'react';
 import Counter from './Counter';
+import { http } from './libs/http';
 import SearchNpm from './SearchNpm';
 import Todo from './Todo';
 
@@ -16,6 +17,7 @@ const App: FC = () => {
           style={{ marginRight: 20 }}
           onClick={() => {
             store.refresh(true);
+            http.clearCache();
             message.success('刷新完成～');
           }}
         >
