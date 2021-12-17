@@ -1188,10 +1188,10 @@ foca-axios@^0.4.0:
   dependencies:
     clone "^2.1.2"
 
-foca@^0.7.1:
-  version "0.7.1"
-  resolved "https://registry.yarnpkg.com/foca/-/foca-0.7.1.tgz#8c9eac061b3b508b41293f0c3fe56e4887573e0e"
-  integrity sha512-J5mOLSYa69QcYUHifzTeEa4RU39IdGrug2JGaEfwi7igt8ltqgSW7QyitOQCPAXCJemhklUNQGFvLIG/yyMr7w==
+foca@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/foca/-/foca-0.8.1.tgz#a858425d50773ef572c19beb0ce75162654b99de"
+  integrity sha512-deHpnRQlQABZHCHir8pCJcACzYodngAe+kCROJy7TGAckL4kpSDp7dv4iycun6oKnJBxK8lBttsOENXfQepUdQ==
   dependencies:
     clone "^2.1.2"
     immer "^9.0.7"
