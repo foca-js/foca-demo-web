@@ -18,7 +18,7 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 store.init({
-  // compose: process.env.NODE_ENV === 'production' ? void 0 : 'redux-devtools',
+  compose: 'redux-devtools',
   middleware: middleware,
   persist: [
     {
