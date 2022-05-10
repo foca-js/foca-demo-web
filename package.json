@@ -10,9 +10,9 @@
   "dependencies": {
     "@ant-design/icons": "^4.7.0",
     "antd": "^4.20.3",
-    "axios": "^0.24.0",
-    "foca": "^0.11.3",
-    "foca-axios": "^0.4.0",
+    "axios": "^0.27.2",
+    "foca": "^0.11.4",
+    "foca-axios": "^1.0.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "sleep-promise": "^9.1.0"

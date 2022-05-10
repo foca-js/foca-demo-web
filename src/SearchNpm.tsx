@@ -15,9 +15,9 @@ const SearchNpm: FC = () => {
     npmMarkModel,
   );
   const loading = useLoading(npmModel.search);
-  const markings = useLoading(npmMarkModel.toggle.assign);
+  const markings = useLoading(npmMarkModel.toggle.room);
 
-  const handleSearch = useCallback((value) => {
+  const handleSearch = useCallback((value: string) => {
     setSearchValue(value);
     setCurrentValue(value);
     value && npmModel.search(value);
@@ -85,7 +85,7 @@ const SearchNpm: FC = () => {
                       loading={markings.find(record.tag)}
                       onChange={() => {
                         npmMarkModel.toggle
-                          .assign(record.tag)
+                          .room(record.tag)
                           .execute(npm.name, record.tag);
                       }}
                     />
