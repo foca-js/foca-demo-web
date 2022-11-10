@@ -18,7 +18,7 @@ const initialState: {
 
 export const todoModel = defineModel('todo', {
   initialState,
-  actions: {
+  reducers: {
     add(state, title: string, content: string) {
       const id = Date.now();
 

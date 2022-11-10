@@ -5,7 +5,7 @@ const initialState: string[] = [];
 
 export const npmMarkModel = defineModel('npmMarks', {
   initialState,
-  effects: {
+  methods: {
     // 私有方法，只能在内部使用。类型提示安全，运行时安全。
     async _sleep() {
       return sleep(2000 * Math.random());

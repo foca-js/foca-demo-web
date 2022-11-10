@@ -6,7 +6,7 @@ const initialState = {
 
 export const counterModel = defineModel('counter', {
   initialState,
-  actions: {
+  reducers: {
     add(state, step: number, more: number = 0) {
       state.count += step + more;
     },

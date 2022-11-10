@@ -13,7 +13,7 @@ const initialState: Partial<Record<string, NpmItem>> = {};
 
 export const npmModel = defineModel('npms', {
   initialState,
-  effects: {
+  methods: {
     async search(packageName: string) {
       historyModel.append(packageName);
 

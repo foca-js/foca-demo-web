@@ -4,7 +4,7 @@ const initialState: string[] = ['react', 'vue'];
 
 export const historyModel = defineModel('history', {
   initialState,
-  actions: {
+  reducers: {
     append(state, packageName: string) {
       const index = state.indexOf(packageName);
 
