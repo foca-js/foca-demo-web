@@ -1,15 +1,10 @@
 import { defineModel } from 'foca';
-import sleep from 'sleep-promise';
 
 const initialState: string[] = [];
 
 export const npmMarkModel = defineModel('npmMarks', {
   initialState,
   methods: {
-    // 私有方法，只能在内部使用。类型提示安全，运行时安全。
-    async _sleep() {
-      return sleep(2000 * Math.random());
-    },
     async toggle(pkg: string, tag: string) {
       await this._sleep();
 
@@ -25,6 +20,12 @@ export const npmMarkModel = defineModel('npmMarks', {
     },
     combineKey(pkg: string, tag: string) {
       return `${pkg}|${tag}`;
+    },
+    // 私有方法，只能在内部使用。类型提示安全，运行时安全。
+    async _sleep() {
+      return new Promise((resolve) => {
+        setTimeout(resolve, 2000 * Math.random());
+      });
     },
   },
   skipRefresh: true,
