@@ -41,6 +41,16 @@ export const todoModel = defineModel('todo', {
     },
   },
   persist: {
-    version: 1,
+    version: 2,
+    dump(state) {
+      return state.list;
+    },
+    load(list) {
+      return {
+        ...this.initialState,
+        list,
+        total: Object.keys(list).length,
+      };
+    },
   },
 });

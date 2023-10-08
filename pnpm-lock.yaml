@@ -8,13 +8,13 @@ specifiers:
   '@types/redux-logger': ^3.0.9
   '@vitest/coverage-c8': ^0.26.2
   antd: 5.0.7
-  foca: ^1.3.0
+  foca: ^3.0.0
   foca-axios: ^3.0.2
   prettier: ^2.8.1
   react: ^18.2.0
   react-dom: ^18.2.0
   redux-logger: ^3.0.6
-  typescript: ^4.9.4
+  typescript: ^5.2.2
   vite: ^4.0.1
   vite-react: ^2.2.0
   vitest: ^0.26.2
@@ -22,7 +22,7 @@ specifiers:
 dependencies:
   '@ant-design/icons': 4.8.0_biqbaboplfbrettd7655fr4n2y
   antd: 5.0.7_biqbaboplfbrettd7655fr4n2y
-  foca: 1.3.0_yx3stg376m7fx223sw6mlr7wea
+  foca: 3.0.0_kame53ed372yjpgk527i7l2gai
   foca-axios: 3.0.2
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -35,7 +35,7 @@ devDependencies:
   '@vitest/coverage-c8': 0.26.2
   prettier: 2.8.1
   redux-logger: 3.0.6
-  typescript: 4.9.4
+  typescript: 5.2.2
   vite: 4.0.1_@types+node@18.11.17
   vite-react: 2.2.0_vite@4.0.1
   vitest: 0.26.2
@@ -1497,21 +1497,21 @@ packages:
       - debug
     dev: false
 
-  /foca/1.3.0_yx3stg376m7fx223sw6mlr7wea:
-    resolution: {integrity: sha512-0q0X1Qxzf4WbTJCofxs+kuDeStyYz7m4+f3ekuUWlqIU874SoSfqtGqzdxxh/LPZUpFZbtcWeGK3MwvTuLvoow==}
+  /foca/3.0.0_kame53ed372yjpgk527i7l2gai:
+    resolution: {integrity: sha512-SDhZmd3hkrywNGRmJYk3myGpornSqzeC1XkW+CqunFoeX3LqU9ZS8oc8P09E5BkNZ3OGmyZ5x9EwpjV7xCHtvQ==}
     peerDependencies:
-      react: ^16.14 || ^17 || ^18
-      typescript: ^4.5
+      react: ^18
+      typescript: ^5
     peerDependenciesMeta:
       typescript:
         optional: true
     dependencies:
-      immer: 9.0.19
+      immer: 9.0.21
       react: 18.2.0
-      react-redux: 8.0.5_6fpxtwwxc52cyvwzdgczt4jvpq
-      redux: 4.2.0
+      react-redux: 8.1.3_uuwhlgwbifc5kqyyuyp3ihkqwu
+      redux: 4.2.1
       topic: 3.0.2
-      typescript: 4.9.4
+      typescript: 5.2.2
     transitivePeerDependencies:
       - '@types/react'
       - '@types/react-dom'
@@ -1674,8 +1674,8 @@ packages:
     dev: true
     optional: true
 
-  /immer/9.0.19:
-    resolution: {integrity: sha512-eY+Y0qcsB4TZKwgQzLaE/lqYMlKhv5J9dyd2RhhtGhNo2njPXDqU9XPfcNfa3MIDsdtZt5KlkIsirlo4dHsWdQ==}
+  /immer/9.0.21:
+    resolution: {integrity: sha512-bc4NBHqOqSfRW7POMkHd51LvClaeMXpm8dx0e8oE2GORbq5aRK7Bxl4FyzVLdGtLmvLKL7BTDBG5ACQm4HWjTA==}
     dev: false
 
   /immutable/4.1.0:
@@ -2671,15 +2671,15 @@ packages:
     resolution: {integrity: sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==}
     dev: false
 
-  /react-redux/8.0.5_6fpxtwwxc52cyvwzdgczt4jvpq:
-    resolution: {integrity: sha512-Q2f6fCKxPFpkXt1qNRZdEDLlScsDWyrgSj0mliK59qU6W5gvBiKkdMEG2lJzhd1rCctf0hb6EtePPLZ2e0m1uw==}
+  /react-redux/8.1.3_uuwhlgwbifc5kqyyuyp3ihkqwu:
+    resolution: {integrity: sha512-n0ZrutD7DaX/j9VscF+uTALI3oUPa/pO4Z3soOBIjuRn/FzVu6aehhysxZCLi6y7duMf52WNZGMl7CtuK5EnRw==}
     peerDependencies:
       '@types/react': ^16.8 || ^17.0 || ^18.0
       '@types/react-dom': ^16.8 || ^17.0 || ^18.0
       react: ^16.8 || ^17.0 || ^18.0
       react-dom: ^16.8 || ^17.0 || ^18.0
       react-native: '>=0.59'
-      redux: ^4
+      redux: ^4 || ^5.0.0-beta.0
     peerDependenciesMeta:
       '@types/react':
         optional: true
@@ -2701,7 +2701,7 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-is: 18.2.0
-      redux: 4.2.0
+      redux: 4.2.1
       use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
@@ -2734,6 +2734,13 @@ packages:
     resolution: {integrity: sha512-oSBmcKKIuIR4ME29/AeNUnl5L+hvBq7OaJWzaptTQJAntaPvxIJqfnjbaEiCzzaIz+XmVILfqAM3Ob0aXLPfjA==}
     dependencies:
       '@babel/runtime': 7.20.6
+    dev: true
+
+  /redux/4.2.1:
+    resolution: {integrity: sha512-LAUYz4lc+Do8/g7aeRa8JkyDErK6ekstQaqWQrNRW//MY1TvCEpMtpTWvlQ+FPbWCx+Xixu/6SHt5N0HR+SB4w==}
+    dependencies:
+      '@babel/runtime': 7.20.6
+    dev: false
 
   /regenerator-runtime/0.13.11:
     resolution: {integrity: sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==}
@@ -2984,9 +2991,9 @@ packages:
     engines: {node: '>=4'}
     dev: true
 
-  /typescript/4.9.4:
-    resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==}
-    engines: {node: '>=4.2.0'}
+  /typescript/5.2.2:
+    resolution: {integrity: sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w==}
+    engines: {node: '>=14.17'}
     hasBin: true
 
   /ufo/1.0.1:
