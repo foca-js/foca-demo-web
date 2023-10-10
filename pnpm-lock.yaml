@@ -8,7 +8,7 @@ specifiers:
   '@types/redux-logger': ^3.0.9
   '@vitest/coverage-c8': ^0.26.2
   antd: 5.0.7
-  foca: ^3.0.0
+  foca: ^3.1.0
   foca-axios: ^3.0.2
   prettier: ^2.8.1
   react: ^18.2.0
@@ -22,7 +22,7 @@ specifiers:
 dependencies:
   '@ant-design/icons': 4.8.0_biqbaboplfbrettd7655fr4n2y
   antd: 5.0.7_biqbaboplfbrettd7655fr4n2y
-  foca: 3.0.0_kame53ed372yjpgk527i7l2gai
+  foca: 3.1.0_kame53ed372yjpgk527i7l2gai
   foca-axios: 3.0.2
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -1497,8 +1497,8 @@ packages:
       - debug
     dev: false
 
-  /foca/3.0.0_kame53ed372yjpgk527i7l2gai:
-    resolution: {integrity: sha512-SDhZmd3hkrywNGRmJYk3myGpornSqzeC1XkW+CqunFoeX3LqU9ZS8oc8P09E5BkNZ3OGmyZ5x9EwpjV7xCHtvQ==}
+  /foca/3.1.0_kame53ed372yjpgk527i7l2gai:
+    resolution: {integrity: sha512-o0woglibQB8OoAfWtF15wRWzQdClhvLEUK4pCvJNHF1IvOkw+IO/m1TF9exgARdDap/ldiPfUyDBHFz1bJzRsQ==}
     peerDependencies:
       react: ^18
       typescript: ^5

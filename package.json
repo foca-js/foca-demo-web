@@ -15,7 +15,7 @@
   "dependencies": {
     "@ant-design/icons": "4.8.0",
     "antd": "5.0.7",
-    "foca": "^3.0.0",
+    "foca": "^3.1.0",
     "foca-axios": "^3.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
